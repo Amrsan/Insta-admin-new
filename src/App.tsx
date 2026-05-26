@@ -200,6 +200,10 @@ const INITIAL_NOTIFICATIONS: NotificationLog[] = [
 export default function App() {
   // --- States ---
 
+  useEffect(() => {
+    document.title = 'Instaclinic Admin';
+  }, []);
+
   // Test Supabase connection on mount
   useEffect(() => {
     async function testSupabaseConnection() {
@@ -710,11 +714,11 @@ export default function App() {
       <header className="md:hidden bg-slate-900 text-white p-4 flex items-center justify-between sticky top-0 z-40 shadow-md" id="mobile_header_panel">
         <div className="flex items-center gap-3">
           <div className="bg-teal-500 text-slate-900 rounded-lg p-2 font-black tracking-wider text-sm shadow-inner" id="mobile_logo_badge">
-            A.D.
+            I.A.
           </div>
           <div>
-            <h1 className="text-base font-bold tracking-tight text-white">MedDash Admin</h1>
-            <p className="text-[10px] text-slate-400 font-medium">AmrIbrahim924@gmail.com</p>
+            <h1 className="text-base font-bold tracking-tight text-white">Instaclinic Admin</h1>
+            <p className="text-[10px] text-slate-400 font-medium">Instaclinic Admin Panel</p>
           </div>
         </div>
         <button
@@ -742,10 +746,10 @@ export default function App() {
           <div className="p-6 border-b border-slate-800">
             <div className="hidden md:flex items-center gap-3 mb-6" id="desktop_logo_container">
               <div className="bg-teal-400 text-slate-950 font-black rounded-xl p-2.5 shadow-md flex items-center justify-center text-lg w-10 h-10">
-                MD
+              IA
               </div>
               <div>
-                <h1 className="text-lg font-bold text-white tracking-wide">MedDash</h1>
+              <h1 className="text-lg font-bold text-white tracking-wide">Instaclinic Admin</h1>
                 <p className="text-xs text-slate-400 font-bold tracking-tight">Management Suite</p>
               </div>
             </div>
@@ -753,12 +757,12 @@ export default function App() {
             <div className="bg-slate-800/80 rounded-xl p-4 border border-slate-700/50" id="user_profile_pill">
               <div className="flex items-center gap-3">
                 <div className="bg-slate-700 p-2 rounded-lg text-teal-400 font-bold text-sm">
-                  AI
+                  IA
                 </div>
                 <div className="overflow-hidden">
                   <p className="text-xs text-slate-400 font-medium">Administrator</p>
-                  <p className="text-sm font-semibold truncate text-slate-100" title="AmrIbrahim924@gmail.com">
-                    AmrIbrahim924@gmail.com
+                <p className="text-sm font-semibold truncate text-slate-100" title="Instaclinic Admin">
+                  Instaclinic Admin
                   </p>
                 </div>
               </div>
@@ -805,6 +809,7 @@ export default function App() {
               <span>Services Management</span>
             </button>
 
+            {/* 
             <button
               id="navigation_tab_notifications"
               onClick={() => {
@@ -822,11 +827,12 @@ export default function App() {
               <Bell size={18} className={activeTab === 'notifications' ? 'text-slate-950' : 'text-slate-400 group-hover:text-white'} />
               <span>Notifications Broadcasting</span>
             </button>
+            */}
           </nav>
 
           {/* Sidebar Footer Info */}
           <div className="p-6 border-t border-slate-800 bg-slate-950/40 text-center" id="sidebar_version_badge">
-            <p className="text-[11px] text-slate-500 font-medium">MedDash Console Admin v2.4.0</p>
+            <p className="text-[11px] text-slate-500 font-medium">Instaclinic  Admin v2.4.0</p>
             <p className="text-[10px] text-teal-400/80 font-bold mt-1">● System Connected Room</p>
           </div>
         </aside>
