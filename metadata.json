@@ -1,6 +1,0 @@
-{
-  "name": "Admin Dashboard System",
-  "description": "An administrative dashboard for managing bookings, services, and notifications for patients/users.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
