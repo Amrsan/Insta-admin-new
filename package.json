@@ -28,6 +28,8 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "react-scripts test",
@@ -52,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0"
   }
 }
